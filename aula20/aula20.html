@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+                //1. Adicionando nomes. Crie um array com 3 nomes. Use um if para verificar se o nome "Lucas" está no array. Se não estiver, adicione com push.
+                //let nomes = [`João`, `Maria`, `Pedro`];
+                //if(nomes.indexOf(`Lucas`) == -1){
+                //    nomes.push(`Lucas`)
+                //}
+
+                //if (nomes.includes(`Lucas`) == false) {
+                //  nomes.splice(`Lucas`);
+                //}
+            //
+                //console.log(nomes);
+            //
+                //let frutas = [`banana`, `Maçã`, `uva`, `Kiwi`];
+                //frutas.splice(2, 1);
+            //
+                //let letras = [`a`, `b`, `c`, `d`, `e`];
+            //
+                //let letras2 = letras.slice(0, 3);
+            //
+                //console.log(letras2); // [a,b,c]
+            //
+                //for (let i = 0; i < 3; i++) {
+                //  letras.push(letras[i]);
+                //}
+            //
+                //console.log(letras);
+
+                // 5. Substituir um elemento por outro. Dado o array ['joão','ana','paulo'], peça para o usuário (via prompt() em ambiente de navegador) digitar um nome. Se esse nome existir no array (includes), substitua por "visitante" com splice.
+                //let nomes = [`João`,`Ana`,`paulo`]
+                // 7. Contar quantas vezes aparece um nome. Com o array ['Ana', 'Pedro', 'Ana', 'Maria', 'Ana'], use for para contar quantas vezes o nome "Ana" aparece.
+               //nomes = [`Ana`,`Pedro`,`Ana`,`Maria`,`Ana`,`Tiago`]
+               //console.log(nomes.length)
+               //let cont = 0
+               //for(let a = 0; a < nomes.length){
+               //    if(nomes[i] == `Ana`){
+               //        cont ++
+               //    }
+
+               //}
+               //console.log(`A Ana apareceu ${cont}`)
+
+                /*
+    Array.map((valor, índice, array) => {
+        código da função ....
+    })
+        
+
+                let numeros = [1,2,3]
+
+                let dobro = numeros.map((x) => {
+            x *= 2
+            return x // x = x * 2
+        })
+
+        console.log(dobro)
+
+        let números = [1,2,3]
+
+        let dobro = números.map((x) =>)
+        */
+
+// Crie um objeto chamado produto que tenha os atributos, nome, descrição e preço. Crie esses atributos inicialmente vazios e depois receba do teclado esses atributos. Mostre na tela uma mensagem com o nome, descrição e valor do produto.
+let produto = {
+    nome: "",
+    descrição: "",
+    preço: ""
+}
+console.log(produto)
+
+produto.nome = prompt("Digite o nome do produto")
+produto.descrição = prompt("Digite a descrição")
+produto.preço = prompt("Digite o preço")
+
+console.log(produto)
+alert(`O nome do produto é ${produto.nome}, com a seguinte descrição: ${produto.descrição}. Custa ${produto.preço} reais`)
+
+//Crie um objeto chamado livro com as seguintes propriedades:
+//Título, autor, ano e número de páginas
+//Depois: Mostre todos os dados do livro, adicione uma propriedade editora, mude o número de páginas, remova a propriedade nome
+let livro = {
+    título: "",
+    ano: "",
+    numerodepaginas: ""
+}
+console.log(livro)
+
+livro.título = prompt("Digite o título do livro")
+livro.ano = prompt("Digite o ano")
+livro.numerodepaginas = prompt("Digite o número de páginas")
+
+console.log(livro)
+alert(`O nome do livro é ${livro.título}, do ano de ${livro.ano} e possui ${livro.numerodepaginas} páginas`)
+
+  </script>
+  <body></body>
+</html>
