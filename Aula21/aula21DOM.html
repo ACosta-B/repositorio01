@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<script>
+    
+</script>
+<body>
+    <header>
+        <div id="">
+        <h1>Meu cabeçalho</h1>
+        </div>
+    </header>
+    <p>paragrafo 0</p>
+    <p>paragrafo 1</p>
+    <p>paragrafo 2</p>
+    
+</body>
+<script>
+ //        ========== FORMASS DE ACASSAR ELEMENTOS DOM ===========
+  //document.getElementById(``)
+  let primeiraDiv = document.getElemntById(`PrimeiroConteudo`)
+  console.log(primeiraDiv)
+  //doment.getElementsByClassName(``) - Seleciona os elementos pelo nome da classe
+  console.log(paragrafos[0])
+  console.log(paragrafos[1])
+  console.log(paragrafos[2])
+  //document.getElementsByTagName(`nome da tag`)
+  let divs = document.getElementsByTagName(`div`)
+  console.log(divs)
+
+  for(let i = 0; i < divs.length; i++){
+    console.log(divs[i])
+  }
+  //document.querySelector(`seletor tipo o do CSS`)
+  let paragrafoNoFooter = document.querySelector(`footer p`)
+  console.log(paragrafoNofooter)
+  console.log(paragasfofoNoFooter)
+
+  function mudarParagrafo(){
+    alert(`Vou trocar o parágrafo!!`)
+    let paragrafo = documentgetElementById(`paragrafoMain`)
+    // Mudar conteúdo textual de um elemento
+    paragrafo.innerText = `Mudei o parágrafo`
+    let div2 = document.getElementById(`div2`)
+    div2.innerHTML = `<img src= "https://encantuz.com/cdn/shop/files/pedra-ametista-acalma-e-purifica-o-ambiente_1024x.jpg?v=1730410110" width = 200px>`
+  }
+  </script>
+
+</html>
