@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch e Then</title>
+</head>
+
+<!-- \\DETALHES//
+
+ 1. Criar o titulo e 'button';
+ 2. Criar uma função no 'onclick' do 'button';
+ 3. Criar a 'function'
+ 4. 'fetch'(URL da API)
+ 5. Selecionar a 'div'
+    -modificar o conteúdo do 'H1': Colocar produto 1
+    -Retirar o botão iniciar
+    *CRIAR O 'CARD': 
+                   -Criar o 'H3' do título e preencher
+                   -Criar a 'img' e colocar os atributos
+                   -Criar um parágrafo(<p></p>) para o preço e preencher
+                   -Criar um parágrafo(<p></p>) para a descrição e preencher
+                   -Criar os botões "próximo" e "anterior"
+-->
+<body>
+    
+</body>
+
+<script>
+
+    //{chave: "Valor", chave2:3}
+    let resposta = fetch(`https://fakestoreapi.com`)
+    .then(response => response.json())
+    .then((resp) => {
+    console.log(resp)
+
+    let tituloPreco = resp.map((produto) => {
+        return {titulo: produto.title, preco: produto.price}
+    })
+    console.log(tituloPreco)
+
+    return tituloPreco
+    })
+    .then((resp) => {
+        console.log(resp)
+    })
+    .catch((erro) => {
+        console.log(erro)
+    })
+
+    let array = []
+    let obj = {}
+
+    console.log(array)
+
+    console.log(obj)
+
+</script>
+</html>
